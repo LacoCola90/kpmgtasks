@@ -31,16 +31,16 @@ def countMaxChoco(money, price, wrap):
     # First find number of chocolates
     # that can be purchased with the
     # given amount
-    choc = int(money / price)
+    choc=int(money / price)
 
     # Now just add number of
     # chocolates with the chocolates
     # gained by wrapprices
-    choc = choc + (choc - 1) / (wrap - 1)
+    choc=choc + (choc - 1) / (wrap - 1)
     return int(choc)
 
-money = 16
-price = 2
-wrap = 2
+money=16
+price=2
+wrap=2
 
 print(countMaxChoco(money, price, wrap))
